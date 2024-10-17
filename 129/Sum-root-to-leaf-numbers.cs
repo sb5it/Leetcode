@@ -15,8 +15,5 @@ public class Solution {
         }
         if (node.left is not null) Traverse(node.left, currentSum);
         if (node.right is not null) Traverse(node.right, currentSum);
-
-        currentSum-=node.val;
-        currentSum /= 10;
     }
 }
